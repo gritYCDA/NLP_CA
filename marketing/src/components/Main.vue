@@ -114,6 +114,7 @@
 
 <template>
   <div class="hello">
+    <br>
     <h1 class="title">Marketing</h1> <!-- Page title -->
 
     <hr>
@@ -195,7 +196,7 @@
 <script>
   import axios from 'axios'
 export default {
-  name: 'HelloWorld',
+  name: 'Main',
   data () {
     return {
       tasks: [], // Array for holding the tasks
