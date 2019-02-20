@@ -18,8 +18,6 @@ class UploadFile(models.Model):
     def __str__(self):
         return self.projectName
 
-# need to add hidden feild id and projectID
-
 class UserInfo(models.Model):
   username = models.CharField(max_length=70)
   password = models.CharField(max_length=20)

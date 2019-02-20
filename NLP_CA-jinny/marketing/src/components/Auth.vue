@@ -91,7 +91,7 @@ export default {
               axios.post('http://localhost:8000/auth/', this.credentials).then(res => {
                 this.$session.start();
                 this.$session.set('token', res.data.token);
-                router.push('/upload');
+                router.push('/Main');
               }).catch(e => {
                 this.loading = false;
                 swal({

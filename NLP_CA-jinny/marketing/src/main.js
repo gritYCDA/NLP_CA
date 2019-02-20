@@ -6,7 +6,11 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import VueSession from 'vue-session'
+import ReactiveSearch from '@appbaseio/reactivesearch-vue'
+import VueGoogleCharts from 'vue-google-charts'
 
+Vue.use(VueGoogleCharts)
+Vue.use(ReactiveSearch)
 Vue.use(Vuetify)
 Vue.use(VueSession)
 

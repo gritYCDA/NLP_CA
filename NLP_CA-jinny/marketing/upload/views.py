@@ -34,7 +34,6 @@ class UploadViewSet(viewsets.ModelViewSet):  # Create a class based view
 def upload_base(request):
     return render(request, 'upload_base.html', {})
 
-
 def SnRdata(filepointer):
   # api-endpoint
   URL = "http://192.168.86.21:8080"

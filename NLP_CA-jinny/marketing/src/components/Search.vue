@@ -3,6 +3,7 @@
     <ReactiveBase
       app="real_last"
       url="https://lf4mFiiji:0addb6b7-4fc1-4e8b-add8-466ca2922758@scalr.api.appbase.io">
+      <div class="left-bar">
       <MultiList
         componentId="Sentsum"
         dataField="sentsum.keyword"
@@ -17,17 +18,18 @@
         selectAllLabel="All Emotions"
         class="filter"
         :react="{ and: ['Sentsum']}"/>
-    </ReactiveBase>
-    <result-list
+      </div>
+      <result-list
       componentId="SearchResult"
       dataField="review_data.keyword"
       :pagination="true"
       :from="0"
-      :size="8"
+      :size="10"
       :showResultStats="true"
       className="result-list-container"
       :react="{ and: ['Sentsum', 'Emosum'] }"
      :renderData="reviewsList"/>
+    </ReactiveBase>
   </div>
 </template>
 
@@ -53,5 +55,27 @@
     text-align: center;
     color: #2c3e50;
     margin-top: 60px;
+  }
+
+  .left-bar {
+    float: left;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 20%;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    -webkit-box-shadow: 9px 10px 20px -10px #ffffff;
+    box-shadow: 9px 10px 20px -10px #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    margin-left: 0;
+    min-width: 200px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0px 10px 10px 10px;
+    margin-right: 15px;
+    left: 0;
+    margin-top: 4px;
+    margin-bottom: 10px;
   }
 </style>

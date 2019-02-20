@@ -4,6 +4,8 @@ import Main from '@/components/Main'
 import File from '@/components/File'
 import Search from '@/components/Search'
 import Auth from '@/components/Auth'
+import Emotion from '@/components/Emotion'
+import Sentiment from '@/components/Sentiment'
 
 Vue.use(Router)
 
@@ -33,6 +35,16 @@ export default new Router({
       path: '/Search',
       name: 'Search',
       component: Search
+    },
+     {
+      path: '/Emotion',
+      name: 'Emotion',
+      component: Emotion
+    },
+    {
+      path: '/Sentiment',
+      name: 'Sentiment',
+      component: Sentiment
     }
   ]
 })
